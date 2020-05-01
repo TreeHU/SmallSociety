@@ -1,0 +1,22 @@
+<section class="section_login">
+  <div class="form-box">
+    <span id="login_title">작은사회 로그인</span><!--
+ --><form action="/login/signin" method="post" accept-charset="utf-8">
+     <div class="login_box">
+          <div class="field-wrap">
+              <input type="text" name="userid" id="userid" required autocomplete="off" placeholder="작은사회 ID">
+          </div><!--
+       --><div class="seperator"></div><!--
+       --><div class="field-wrap">
+              <input type="password" name="password" id="password" required autocomplete="off" placeholder="암호">
+          </div><!--
+       --><div class="field-wrap"><button type="submit" class="button">로그인하기</button></div><!--
+       --><div id="forget_userid" class="forget-wrap">
+           <a href="/login/change_pwd">ID 또는 비밀번호 찾기</a></div><!--
+       --><div id="forget_bar" class="forget-wrap">
+           |</div><!--
+       --><div id="make_userid" class="forget-wrap">
+           <a href="/login/signup"> 작은사회 계정 만들기 </a></div>
+       </div>
+      </form>
+</section>

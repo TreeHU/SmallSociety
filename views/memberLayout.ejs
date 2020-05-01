@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/memberLayout.css">
+    <link rel="stylesheet" type="text/css" href="/css/member.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <% include ../public/member_nav.html %>
+    <%
+    if(sub=="main"){
+    %>
+    <% include ../public/member_main.html %>
+    <%
+    }else if(sub=="smallart"||sub=="smallbook"||sub=="smallvideo"){
+    %>
+    <link rel="stylesheet" type="text/css" href="../css/member_<%=sub%>.css">
+
+    <%- include("../public/member_"+sub+".html") %>
+    <%
+    }else if(sub=="smallart_write"||sub=="smallbook_write"||sub=="smallvideo_write"){
+    %>
+    <link rel="stylesheet" type="text/css" href="../css/member_<%=sub%>.css">
+    <%- include("../public/member_"+sub+".html") %>
+
+
+    <%
+    }else{
+
+    }
+
+    %>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+
+<!--
+폼형식으로 변환해서 마저 완성해야함
+-->
+
+
+	<section style="display:block;">
+			<div class="report_title_wrap">
+				<input type="text" class="report report_title" id="smallvideo_report_title" placeholder="글 제목"  onkeyup="textAreaAdjust(this)" onkeydown="textAreaAdjust(this)">
+			</div>
+			</br>
+			<div class="report_basic">
+				<div class="report" id="time">
+					작성일 :
+					<?php echo substr(date("Y. m. d",time()),2,2).". ".substr(date("Y. m. d",time()),6,2).". ".substr(date("Y. m. d",time()),10,2); ?>
+				</div>
+				</br>
+				<div class="report" id="writer">
+					작성자 :
+					<?php	echo $row_user['lastname'] ."&nbsp;&nbsp;".substr($row_user['firstname'],0,3)."&nbsp;&nbsp;".substr($row_user['firstname'],3,3); ?>
+				</div>
+			</div>
+			</br>
+			<div class="metting_title">글 개요</div>
+			<div class="metting">
+				<div class="metting_info">
+					<span>단원 구분</span>
+					<div>
+						<select id="chapter" class="book_form">
+							<option value="스토리"> 스토리 </option>
+							<option value="각본"> 각본 </option>
+							<option value="촬영"> 촬영 </option>
+							<option value="미장센"> 미장센 </option>
+							<option value="움직임"> 움직임 </option>
+							<option value="편집"> 편집 </option>
+							<option value="음향"> 음향 </option>
+							<option value="연기"> 연기 </option>
+						</select>
+						<div id="form_selector"></div>
+					</div>
+				</div>
+				<div class="none">
+					</br>
+				</div>
+				<div class="metting_info">
+					<span>형식&nbsp;</span>
+					<div>
+						<div class="radio-box">
+							<input type="radio" id="filmtonight" name="video_type" value="필름투나잇" checked>
+							<label for="filmtonight">필름투나잇</label>
+							<input type="radio" id="opinion" name="video_type" value="발제의견">
+							<label for="opinion">발제/의견</label>
+							<input type="radio" id="video" name="video_type" value="영상분석">
+							<label for="video">영상분석</label>
+						</div>
+					</div>
+				</div>
+				</br>
+				<div class="video_type_2">
+					<div class="metting_info">
+						<span>주제명 1</span>
+						<div>
+							<input type="text" id="opnion_title1" placeholder="토의 주제 제목" onkeyup="textAreaAdjust(this)" onkeydown="textAreaAdjust(this)">
+						</div>
+					</div>
+					<div class="none">
+						</br>
+					</div>
+					<div class="metting_info">
+						<span>주제명 2</span>
+						<div>
+							<input type="text" id="opnion_title2" placeholder="토의 주제 제목" onkeyup="textAreaAdjust(this)" onkeydown="textAreaAdjust(this)">
+						</div>
+					</div>
+					</br>
+					</div>
+
+				</div>
+
+			</br>
+			</br>
+			</br>
+			<div class="metting_title">관련영화 <span class="video_type_3_info">* 최소 1개, 최대 2개</span></div>
+
+			<div class="metting">
+				<div>
+					<span style="color: rgb(51, 51, 51); font-family: Heebo; font-size: 16px; font-weight: 500;">영화 검색</span>
+					<input type="text" id="movie_title" placeholder="영화 제목" onkeyup="textAreaAdjust(this)" onkeydown="textAreaAdjust(this)" style="border:0px; padding:0px; margin:0px;background-color:0px;font-size:16px;">
+					<span id="search1">검색</span>
+					<table id="movie_db_result1" class="result_table" width="100%">
+
+					</table>
+				</div>
+			</div>
+			</br>
+			</br>
+			</br>
+			<div class="insert">
+				<button type="button" onClick="insert()">인용구</button>
+			</div>
+			<div class="insert" style="margin-left:-65px;">
+				<button type="button" onClick="youtube()">유튜브</button>
+			</div>
+			<div class="insert" style="margin-left:-130px;">
+				<button type="button" onClick="report_image(this)">이미지</button>
+				<input type='file' id='myfile' name='myfile'>
+			</div>
+			<div class="metting_title" id="change_title">감상문 본문</div>
+			<div id="agenda" class="agenda">
+				<div class="result_background">
+					<div class="result" contenteditable="true" id="result1" onkeydown="resize(this)" onkeyup="resize(this)"></div>
+					<input type="text" id="post1" name="report1" style="display:none;" />
+				</div>
+			</div>
+			</div>
+			</br>
+			</br>
+			<div class="video_type_2 video_type_3">
+				<div class="insert">
+					<button type="button" onClick="insert()">인용구</button>
+				</div>
+				<div class="insert" style="margin-left:-65px;">
+					<button type="button" onClick="youtube()">유튜브</button>
+				</div>
+				<div class="insert" style="margin-left:-130px;">
+					<button type="button" onClick="report_image(this)">이미지</button>
+				</div>
+				<div class="metting_title" id="change_title2">감상문 본문</div>
+				<div id="agenda" class="agenda">
+					<div class="result_background">
+						<div class="result" contenteditable="true" id="result2" onkeydown="resize(this)" onkeyup="resize(this)"></div>
+						<input type="text" id="post1" name="report2" style="display:none;" />
+					</div>
+				</div>
+			</div>
+			</br>
+			</br>
+			</div>
+			<div id="button2">글올리기</div>
+			<div id="button1">등록완료</div>
+			</br>
+			<a class="change" href="list.php">
+				<i id="link_left" class="fa fa-angle-left"></i>뒤로가기</a>
+		</form>
+	</section>

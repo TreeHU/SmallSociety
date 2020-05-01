@@ -1,0 +1,98 @@
+
+<!--
+폼형식으로 변환해서 마저 완성해야함
+-->
+
+
+<section>
+	<form action="write_update.php" method="post" id="login_form" name="myForm" onsubmit="return validateForm()">
+	<div class="report_title_wrap" onChange="this.style.width = ((this.value.length + 1) * 8) + 'px'">
+	<input type="text" class="report report_title" name="report_title" placeholder="글 제목" onkeypress="this.style.width = ((this.value.length + 1) * 8) + 'px'">
+	</div></br>
+	<div class="report_basic">
+	<div class="report" id="time">
+		작성일 : <?php echo substr(date("Y. m. d",time()),2,2).". ".substr(date("Y. m. d",time()),6,2).". ".substr(date("Y. m. d",time()),10,2); ?> 
+	</div></br>
+	<div class="report" id="writer">
+		작성자 : <?php	echo $row['lastname'] ."&nbsp;&nbsp;".substr($row['firstname'],0,3)."&nbsp;&nbsp;".substr($row['firstname'],3,3); ?>
+	</div>
+</div></br>
+<div class="metting_title">글 개요</div>
+<div class="metting">
+	<div class="metting_info"><span>도서명</span>
+		<div>
+			<select name="book_title" class="book_form">
+				<option value="하루하루가 이별의 날"> 하루하루가 이별의 날 </option>
+				<option value="나쁜 사마리아인들"> 나쁜 사마리아인들 </option>
+				<option value="자기 앞의 생"> 자기 앞의 생 </option>
+				<option value="빛의 물리학"> 빛의 물리학 </option>
+				<option value="혐오사회"> 혐오사회 </option>
+				<option value="조선이 버린 천재들"> 조선이 버린 천재들 </option>
+				<option value="피로 물든 방"> 피로 물든 방 </option>
+				<option value="영혼의 미술관"> 영혼의 미술관 </option>
+				<option value="프랑켄슈타인"> 프랑켄슈타인 </option>
+			</select><div id="form_selector"></div>
+		</div></div>
+	<div class="none">
+		</br>
+	</div>
+	<div class="metting_info"><span>별점</span>
+		<div>
+			<select name="star_rate" class="book_form">
+				<option value="0"> 0 </option>
+				<option value="0.5"> 0.5 </option>
+				<option value="1"> 1 </option>
+				<option value="1.5"> 1.5 </option>
+				<option value="2"> 2 </option>
+				<option value="2.5"> 2.5 </option>
+				<option value="3"> 3 </option>
+				<option value="3.5"> 3.5 </option>
+				<option value="4"> 4 </option>
+				<option value="4.5"> 4.5 </option>
+				<option value="5"> 5 </option>
+			</select><div id="form_selector"></div>
+		</div></div>
+</div>
+</br>
+</br>
+</br>
+<div class="insert">
+	<button type="button" onClick="insert()">인용구</button>
+</div>
+<div class="insert" style="margin-left:-65px;">
+	<button type="button" onClick="youtube()">유튜브</button>
+</div>
+<div class="insert" style="margin-left:-130px;">
+	<button type="button" onClick="report_image(this)">이미지</button>
+	<input type='file' id='myfile' name='myfile'>
+</div>
+<div class="metting_title" id="change_title2">독후감 본문</div>
+<div id="agenda" class="agenda">
+	<div class="result_background">
+		<div class="result" contenteditable="true" id="result1" onkeydown="resize(this)" onkeyup="resize(this)"></div>
+		<input type="text" id="post1" name="report1" style="display:none;" />
+	</div>
+</div>
+</br></br>
+<div class="insert"><button type="button" onClick="insert()">인용구</button></div>
+<div class="metting_title">발제 1에 대한 의견</div>
+			<div id="agenda" class="agenda">
+				<div class="result_background">
+					<div class="result" contenteditable="true" id="result2" onkeydown="resize(this)" onkeyup="resize(this)"></div>
+				<input type="text" id="post2" name="report2" style="display:none;"/>
+				</div>
+			</div>
+</div></br></br>
+<div class="insert"><button type="button" onClick="insert()">인용구</button></div>
+<div class="metting_title">발제 2에 대한 의견</div>
+			<div id="agenda" class="agenda">
+				<div class="result_background">
+					<div class="result" contenteditable="true" id="result3" onkeydown="resize(this)" onkeyup="resize(this)"></div>
+					<input type="text" id="post3" name="report3" style="display:none;"/>
+				</div>
+			</div>
+</div></br></br>
+			<button type="submit" id="button"> 제출하기	</button></br>
+			<a class="change" href="list.php"><i id="link_left" class="fa fa-angle-left"></i>뒤로가기</a>
+	</form>
+</section>

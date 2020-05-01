@@ -1,0 +1,211 @@
+<footer>
+    <div class="directory">
+        <button class="directory_section" id="directory_button1">
+            <div class="directory_section_title">작은모임</div>
+            <div class="open">
+                <span class="open_icon_wrap">
+                    <span class="open_icon"></span>
+                    <span class="open_icon"></span>
+                </span>
+            </div>
+            <ul class="directory_section_list">
+                <li>
+                    <a href="smallbook.html">작은사색</a>
+                </li>
+                <li>
+                    <a href="smallart.html">작은예술</a>
+                </li>
+                <li>
+                    <a href="smallvideo.html">작은영상</a>
+                </li>
+            </ul>
+        </button>
+        <button class="directory_section" id="directory_button2">
+            <div class="directory_section_title">운영진</div>
+            <div class="open">
+                <span class="open_icon_wrap">
+                    <span class="open_icon"></span>
+                    <span class="open_icon"></span>
+                </span>
+            </div>
+            <ul class="directory_section_list">
+                <li>
+                    <a href="management.html">전략기획팀</a>
+                </li>
+                <li>
+                    <a href="account.html">재무회계팀</a>
+                </li>
+                <li>
+                    <a href="design.html">브랜드디자인팀</a>
+                </li>
+                <li>
+                    <a href="uiux.html">UIUX팀</a>
+                </li>
+                <li>
+                    <a href="it.html">IT개발팀</a>
+                </li>
+                <li>
+                    <a href="production.html">프로덕션팀</a>
+                </li>
+            </ul>
+        </button>
+        <div class="legal">
+            <div class="copyright">Copyright © 2017 작은사회. <span>대표자 이상헌. 모든 권리 보유.</span></div>
+            <div class="legal_links">
+                <a href="#">개인정보 관리방침</a>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<script>
+$( document ).ready(function() {
+    $flag=true;
+    $( ".directory_section_list" ).hide();
+    $( ".directory_section" ).click(function(){
+        $( "#"+$(this).attr('id')+" .directory_section_list" ).slideToggle( "fast", function() {
+        });
+        if($flag==true){
+            $('#'+$(this).attr('id')+' .open .open_icon:nth-child(1)').css('transform','rotate(-45deg)');
+            $('#'+$(this).attr('id')+' .open .open_icon:nth-child(2)').css('transform','rotate(45deg)');
+            $flag=false;
+        }else{
+            $('#'+$(this).attr('id')+' .open .open_icon:nth-child(1)').css('transform','rotate(0deg)');
+            $('#'+$(this).attr('id')+' .open .open_icon:nth-child(2)').css('transform','rotate(90deg)');
+            $flag=true;
+        }
+    });
+});
+</script>
+<style>
+    footer{
+        padding:0px;
+        margin:0px;
+        padding-top:30px;
+        padding-bottom:60px;
+    }
+    .directory {
+        display:inline-block;
+        position: relative;
+        width:100%;
+        background-color: rgb(238, 238, 238);
+        z-index: 1;
+    }
+
+    .directory_section {
+        display:inline-block;
+        position: relative;
+        margin-left:0px;
+        width:90%;
+        max-width:970px;
+        background-color:rgba(0,0,0,0);
+        border:0px;
+        text-align:left;
+        border-bottom: 1px solid rgb(214, 214, 214);
+        z-index: 1;
+    }
+
+    .directory_section_title {
+        display:inline-block;
+        position: relative;
+        color: rgb(51, 51, 51);
+        font-size: 12px;
+        height: 18px;
+        line-height: 18px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        z-index: 2;
+    }
+    .directory_section a{
+        color: rgb(85, 85, 85);
+        font-size: 11px;
+        height: 1px;
+        line-height: 14px;
+        right: 0px;
+        text-align: left;
+        text-decoration: none;
+        top: 0px;
+        width: 1px;
+        z-index: 3;
+    }
+    .directory_section_list{
+        display:inline-block;
+        position:static;
+        padding:0px;
+        color: rgb(51, 51, 51);
+        font-size: 11px;
+        list-style: none;
+        transition-duration: 0.3s;
+        transition-property: transform;
+        transition-timing-function: ease;
+    }
+    .directory_section_list li{
+        padding:0px 0px 10px 10px;
+    }
+    .legal{
+        display:inline-block;
+        position: relative;
+        width:90%;
+        max-width:970px;
+        margin-bottom:30px;
+        color: rgb(136, 136, 136);
+        font-size: 11px;
+        line-height: 16px;
+        text-align: left;
+    }
+    .copyright{
+        display:inline-block;
+        position: static;
+        color: rgb(136, 136, 136);
+        font-size: 11px;
+        height: 16px;
+        line-height: 16px;
+        margin-right: 30px;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .copyright span{
+        font-size: 10px;
+    }
+    .legal_links{
+        display:inline-block;
+        position: static;
+        color: rgb(136, 136, 136);
+        line-height: 16px;
+        margin-top: 3px;
+    }
+    .legal_links a{
+        display:inline-block;
+        margin-right: 10px;
+        padding-right: 12px;
+        border-right: 1px solid rgb(214, 214, 214);
+        color: rgb(85, 85, 85);
+        text-decoration:none;
+        font-size:10px;
+    }
+    .open_icon_wrap{
+        transition-duration: 0.25s;
+        transition-property: transform;
+        transition-timing-function: linear;
+    }
+    .open_icon{
+        display:inline-block;
+        position:absolute;
+        top:20px;
+        right:5px;
+        width:8px;
+        height:1px;
+        background-color:#666;
+    }
+    .open span{
+        transition-duration: 0.2s;
+        transition-property: transform;
+        transition-timing-function: ease;
+    }
+    .open span:nth-child(1){
+        transform: rotate(0deg);
+    }
+    .open span:nth-child(2){
+        transform: rotate(90deg);
+    }
+</style>

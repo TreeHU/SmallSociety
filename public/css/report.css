@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,500');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i');
+@import url('http://fonts.googleapis.com/earlyaccess/nanumpenscript.css');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+.section_report{
+    display:block;
+    width:100%;
+    background-color: rgb(244, 244, 244);
+    font-family: 'Heebo';
+    font-weight:300;
+    padding-top:40px;
+    text-align:center;
+}
+
+.report_header{
+    color: rgb(64, 64, 64);
+    display: inline-block;
+    width:85%;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom:18px;
+    letter-spacing: 1px;
+    text-align:left;
+}
+
+.report_category{
+    color: rgb(128, 128, 128);
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 8px;
+}
+
+.report_title{
+    display: block;
+    color: rgb(64, 64, 64);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight:500;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.report_date{
+    display: block;
+    color: rgb(128, 128, 128);
+    font-size: 11px;
+    line-height: 12px;
+}
+.report_column{
+    display: block;
+
+    text-align:left;
+    color: rgb(64, 64, 64);
+    line-height: 25px;
+    font-size: 16px;
+/*
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px; 
+    column-gap: 40px;*/
+}
+.report_body{
+    display: inline-block;
+    overflow: hidden;
+    width:85%;    
+}
+.report_section_title{
+    display: block;
+    color: rgb(64, 64, 64);
+    font-size: 18px;
+    font-weight:100;
+    line-height: 23px;
+    letter-spacing:2px;
+    margin-bottom: 10px;
+}
+.report_1, .report_2, .report_3{
+    word-break:break-all;
+    display: block;
+    overflow: hidden;
+    text-align: justify;
+    color: #333;
+    font-size: 17px;
+    font-family: 'NanumGothic';
+}
+
+.report_1 div{
+    word-break:break-all;
+    display: block;
+    overflow: hidden;
+    text-align: justify;
+    color: #333;
+    font-size: 17px;
+    font-family: 'NanumGothic';
+    line-height: 28px;
+}
+
+.report_1 div.quote{
+    font-family: 'heebo';
+    color:#222;
+    font-style:italic;
+    font-weight: 300;
+    filter:blur(0px);
+    -webkit-filter: blur(0px);
+}
+.quote{
+    display:inline-block;
+    overflow: hidden;
+    margin:0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+.more_info{
+    display:inline-block;
+    width:85%;    
+    text-align:left;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+.more_content{
+    display:inline-block;
+    color: rgb(90, 90, 90);
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-left: 2px;
+    text-align: left;
+}
+
+.more_section_title{
+    display:inline-block;
+    color: rgb(64, 64, 64);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.more_info_section{
+    display:inline-block;
+    width:240px;
+    line-height:16px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-top: 1px solid rgb(190, 190, 190);
+}
+
+@media screen and (max-width:567px) {
+    .report_column{    
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+        -webkit-column-gap: 0px; /* Chrome, Safari, Opera */
+        -moz-column-gap: 0px; /* Firefox */
+        column-gap: 0px;
+    }
+    .report_1, .report_2, .report_3{
+        font-size: 15px;
+    }
+    
+    .report_1 div{
+        font-size: 15px;
+    }
+    
+    .report_1 div.quote{
+        font-size: 15px;
+    }
+    
+    
+    
+}

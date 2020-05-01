@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,500');
+
+.leader_section_header{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    border-bottom-color: rgb(234, 234, 234);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(51, 51, 51);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(51, 51, 51);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(51, 51, 51);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    display: inline-block;
+    font-family: 'Heebo';
+    font-size: 16px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: normal;
+    height: 61px;
+    line-height: 20px;
+    margin-bottom: 32px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    max-width: 90%;
+    width:1010px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    position: relative;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+
+}
+
+.leader_section_title{
+    border-bottom-color: rgb(51, 51, 51);
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(51, 51, 51);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(51, 51, 51);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(51, 51, 51);
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 32px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-weight: 100;
+    height: auto;
+    letter-spacing: 0px;
+    line-height: 60px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    outline-color: rgb(51, 51, 51);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    vertical-align: baseline;
+}
+
+.notice_board{
+    border-bottom-color: rgb(227, 227, 227);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: rgb(51, 51, 51);
+    cursor: auto;
+    direction: ltr;
+    display: inline-block;
+    font-family: 'Heebo';
+    font-size: 17px;
+    height: 47px;
+    line-height: 26px;
+    margin-bottom: 32px;
+    margin-top: 0px;
+    max-width: 90%;
+    width:1010px;
+    padding-bottom: 32px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+
+}
+.notice_board_top{
+    color: rgb(136, 136, 136);
+    cursor: auto;
+    direction: ltr;
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-synthesis: none;
+    font-weight: 600;
+    height: 18px;
+    letter-spacing: 0.8999999761581421px;
+    line-height: 18px;
+    margin-bottom: 2px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-break: keep-all;
+}
+.notice_board_bottom{
+    color: rgb(51, 51, 51);
+    cursor: auto;
+    direction: ltr;
+    display: block;
+    font-size: 17px;
+    font-style: normal;
+    font-synthesis: none;
+    font-weight: 100;
+    height: 26px;
+    letter-spacing: normal;
+    line-height: 26px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    word-break: keep-all;
+}
+.notice_board_date{
+    color: rgb(136, 136, 136);
+    cursor: auto;
+    direction: ltr;
+    display: inline;
+    font-size: 12px;
+    font-style: normal;
+    font-synthesis: none;
+    font-weight: 600;
+    letter-spacing: 0.824999988079071px;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-break: keep-all;
+}
+.notice_board_category{
+    cursor: auto;
+    direction: ltr;
+    display: inline;
+    font-size: 12px;
+    font-style: normal;
+    font-synthesis: none;
+    font-weight: 600;
+    letter-spacing: 0.8999999761581421px;
+    line-height: 18px;
+    padding-left: 5px;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    word-break: keep-all;
+}
+.notice_board_title{
+    color: rgb(51, 51, 51);
+    cursor: auto;
+    direction: ltr;
+    display: block;
+    font-size: 17px;
+    font-style: normal;
+    font-synthesis: none;
+    font-weight: 600;
+    height: 26px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    word-break: keep-all;
+}
+
+#user_info{
+    position:fixed;
+    top:12.8px;
+    left:20px;
+    margin-top:0px;
+    font-size:20px;
+    z-index:11;
+    color:#fefefe;
+}
+#write_report{
+    position:fixed;
+    top:13px;
+    right:20px;
+    z-index:12;
+    margin-top:0px;
+    font-size:22px;
+    color:#fefefe;
+}
+.write_link{
+    color: #666;
+    display:inline-block;
+    font-family: 'Heebo';
+    font-size: 15px;
+    font-weight:300;
+    line-height: 78px;
+    width:55px;
+    text-align: right;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    text-shadow: none;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+.write_link:hover{
+    border-bottom-color: rgb(0, 136, 204);
+    color: rgb(0, 136, 204);
+    text-decoration: underline;
+}
+.link_wraper{
+    display:inline-block;
+    position:absolute;
+    width:99.5%;
+    text-align:right;
+}

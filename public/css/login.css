@@ -1,0 +1,202 @@
+.section_login{
+    height:700px;
+
+    background-image: url(../images/main_image2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom;
+
+    text-align:center;
+    font-family: 'Source Sans Pro';
+}
+
+.form-box {
+    display:inline-block;
+    background: rgba(25,25,25,0.6);
+    box-shadow:0px 0px 100px rgba(100,100,100,0.5);
+    padding: 60px 40px 60px 40px;
+    max-width: 500px;
+    width: 75%;
+    margin-top: 150px;
+    border-radius: 4px;
+    border:0.1px solid rgba(35,35,35,0.3);
+}
+
+#login_title {
+    display:inline-block;
+    font-size:35px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.login_box{
+    max-width:327px;
+    width:95%;
+    height:84px;
+
+    border: 0.3px;
+    border-style : solid;
+    border-color: #666;
+    border-radius: 5px;
+    
+    background-color:#fff;
+    display:inline-block;
+}
+
+.field-wrap {
+    height:42px;
+    max-width:327px;
+    width:100%;
+}
+
+.seperator{
+    max-width:327px;
+    width:100%;
+    height:0.5px;
+    background-color:#666;
+}
+
+.field-wrap input{
+    display:inline-block;
+    position:relative;
+    bottom:1px;
+    max-width:300px;
+    width:93%;
+    border:0px;
+    margin-top:12px;
+    font-size:16px;
+    background-color:rgba(0,0,0,0);
+}
+
+.field-wrap input:focus{
+    outline:none;
+}
+
+.button {
+    display:inline-block;
+    max-width:326px;
+    width:100%;
+
+    margin-top:15px;
+    padding: 7px 0px 7px 0px;
+
+    border: 0px ;
+    border-radius: 5px;
+    outline: none;
+
+    font-size: 20px;
+    font-weight:300;
+    letter-spacing: 2px;
+    
+    background-image: -webkit-linear-gradient(rgb(66, 161, 236), rgb(0, 112, 201));
+    background-image: -moz-linear-gradient(rgb(66, 161, 236), rgb(0, 112, 201));
+    background-image: -o-linear-gradient(rgb(66, 161, 236), rgb(0, 112, 201));
+    background-image: linear-gradient(rgb(66, 161, 236), rgb(0, 112, 201));
+
+    color: #fff;
+    
+    transition-property: background-color;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -o-transition-property: background-color;
+
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}   
+
+.button:hover {
+    background-image: -webkit-linear-gradient(rgb(81, 169, 238), rgb(20, 123, 205));
+    background-image: -moz-linear-gradient(rgb(81, 169, 238), rgb(20, 123, 205));
+    background-image: -o-linear-gradient(rgb(81, 169, 238), rgb(20, 123, 205));
+    background-image: linear-gradient(rgb(81, 169, 238), rgb(20, 123, 205));
+}
+
+.forget-wrap{
+    display:inline-block;
+    margin-top:25px;
+    width:150px;
+    font-size:15px;
+}
+
+.forget-wrap a {
+    text-decoration: none;
+    color: #eee;
+    font-weight:100;
+
+        transition-property: color;
+    -webkit-transition-property: color;
+    -moz-transition-property: color;
+    -o-transition-property: color;
+
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}
+
+#forget_bar{
+    position:relative;
+    bottom:2px;
+    color: #eee;
+    font-weight:100;
+    font-size:13px;
+    width:10px;
+}
+
+
+.forget-wrap a:hover {
+    color:#aaa;
+}
+
+
+@media screen and (max-width:1024px) {
+    .section_login{
+    height:1250px;
+    }
+    .form-box {
+        margin-top: 300px;
+    }
+    #forget_bar{
+        display:none;
+    }
+    #make_userid{
+        margin-top:13px;
+    }
+    #forget_userid{
+        margin-top:30px;
+    }
+    #login_title{
+        font-size:30px;
+    }
+    .field-wrap input{
+        bottom:3px;
+        width:90%;
+    }
+}
+@media screen and (max-width:415px) {
+    .section_login{
+    height:580px;
+    }
+    .form-box {
+        margin-top: 50px;
+    }
+    #forget_bar{
+        display:none;
+    }
+    #make_userid{
+        margin-top:13px;
+    }
+    #forget_userid{
+        margin-top:30px;
+    }
+    #login_title{
+        font-size:30px;
+    }
+    .field-wrap input{
+        bottom:3px;
+        width:90%;
+    }
+}

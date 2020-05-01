@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,500,700');
+main{
+padding:0;
+margin:0;
+}
+.member_main_section2{
+padding-top:30px;
+	background-color:#000;
+}
+.member_main_section2 .member_main_comment{
+	color:#fff;
+}
+.member_main_section2 .member_main_subtitle{
+	color:#fff;
+}
+.member_main_image{
+	margin-top:20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+#member_main_image1{
+	background-image: url('/images/lasseter.png');
+}
+.member_main_comment{
+	display:inline-block;
+	margin-top:80px;
+	font-family: 'Heebo';
+	font-size:38px;
+	font-weight:500;
+	color:#222;
+	filter:blur(0px);
+	-webkit-filter:blur(0px);
+}
+.member_content{
+	padding-top:10px;
+	padding-bottom:15px;
+	font-family: 'Heebo';
+	color:#555;
+}
+.member_main_subtitle{
+	display:inline-block;
+	margin-top:10px;
+	width:83%;
+	max-width:700px;
+	font-size:18px;
+	letter-spacing: 1px;
+	line-height:2;
+	font-family: 'Heebo';
+	color:#000;
+	font-weight:100;
+	text-align:justify;
+	word-break:break-all;
+	filter:blur(0px);
+	-webkit-filter:blur(0px);
+}
+.member_main_link_wrap{
+	background-color:#c6c6c6;
+}
+.member_main_link{
+	display:inline-block;
+	margin-top:15px;
+	margin-bottom:15px;
+	font-family: 'Heebo';
+	font-size:16px;
+	letter-spacing: 2px;
+	font-weight:300;
+	color:#000;
+	text-decoration:none;
+}
+.member_main_link:hover{
+	text-decoration:underline;
+}
+.member_main_link i{
+	margin-left:5px;
+}
+@media screen and (max-width:420px) {
+	.member_main_subtitle{
+		font-size:15px;
+	}
+}

@@ -1,0 +1,73 @@
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%=title%></title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/smallclub.css">
+    <script type="text/javascript" src="/js/jquery.js"></script>
+	   <script type="text/javascript" src="/js/include.js"></script>
+    <!--[if lt IE 9]>
+        <script src="./html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<% include ../public/nav.html %>
+    <main>
+      <%
+      if(sub =="smallbook"||sub=="smallart"||sub=="smallvideo"){
+      %>
+        <% include ../public/subnav_smallclub.html %>
+        <%- include('../public/'+sub+'.html') %>
+      <%
+      }else if(sub=="smallmain"){
+      %>
+        <% include ../public/subnav_smallclub.html %>
+        <% include ../public/smallclub.html %>
+      <%
+    }else if(sub =="management"||sub=="account"||sub=="design"||sub=="uiux"||sub=="it"||sub=="production"){
+      %>
+        <% include ../public/subnav_leader.html %>
+        <link rel="stylesheet" type="text/css" href="/css/leader.css">
+        <%- include('../public/'+sub+'.html') %>
+      <%
+      }else if(sub=="leadermain"){
+      %>
+        <% include ../public/subnav_leader.html %>
+        <link rel="stylesheet" type="text/css" href="/css/leader.css">
+        <% include ../public/leader.html %>
+      <%
+      }else if(sub=="notice"){%>
+        <link rel="stylesheet" type="text/css" href="/css/notice.css">
+        <%
+        if(notice_num=="none"){
+          %>
+          <% include ../public/notice.html %>
+          <%
+        }else{
+          %>
+          <%- include('../public/notice'+notice_num+'.html') %>
+          <%
+        }
+      }else if(sub=="login"){
+        %>
+          <link rel="stylesheet" type="text/css" href="/css/login.css">
+          <% include ../public/login.html %>
+        <%
+      }else{
+      %>
+        <div>잘못된 접근입니다</div>
+      <%
+      }
+      %>
+    </main>
+
+
+	<footer>
+		<span>Copyright © 2017 by 작은사회</span>
+	</footer>
+</body>
+
+</html>

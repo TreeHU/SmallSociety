@@ -1,0 +1,51 @@
+
+<!--
+폼형식으로 변환해서 마저 완성해야함
+-->
+
+
+<section class="script_section">
+	<div class="script_list_body">
+		<div class="script_list_body_title">
+			<input type="text" class="script_list_body_title_input" id="report_title" placeholder="작품명" onkeyup="resizeWidth(this)" onkeydown="resizeWidth(this)">
+		</div>
+		<div class="script_list_body_subtitle">
+			<span>작성일</span> <?php echo date('y. m. d.'); ?><br>
+			<span>작성자</span> <?php echo $row_user['lastname'].$row_user['firstname']; ?><br><br>
+		</div><!--
+		<div class="script_list_body_content_title">전시 정보</div><br>
+		<div class="script_list_body_subtitle">
+			<span>전시명</span>
+			<input type="text" class="script_list_body_subtitle_input" id="exhibition_title" placeholder="전시명" onkeyup="resizeWidth(this)" onkeydown="resizeWidth(this)">
+			<span id="search2">검색</span>
+			<table id="exhibition_db_result1" class="result_table" width="100%">
+			</table>
+		</div><br><br>-->
+		<div class="script_list_body_content_title">도서 정보</div><br>
+		<div class="script_list_body_subtitle">
+			<span>도서명</span>
+			<input type="text" class="script_list_body_subtitle_input" id="book_title" placeholder="도서명" onkeyup="resizeWidth(this)" onkeydown="resizeWidth(this)">
+			<span id="search1">검색</span>
+			<table id="book_db_result1" class="result_table" width="100%">
+			</table>
+		</div><br><br>
+		<div class="script_list_body_content_title">나의 작품</div><br><br>
+		<div class="report_list_body_image">
+			<img id="report_image" />
+		</div><br>
+		<div id="button_img" class="cloud_section_button_type">사진 업로드</div>
+		<form id="fileForm" action="cloud_upload.php" method="post" enctype="multipart/form-data">
+							<input type="file" id="fileToUpload" style="display:none;"/>
+		</form>
+		<br><br><br>
+		<div class="script_list_body_content_title">간단한 설명</div><br><br><br>
+		<div class="script_list_body_report">
+			<textarea placeholder="작품 설명" id="report" onkeyup="resizeHeight(this)" onkeydown="resizeHeight(this)"></textarea>
+		</div><br><br>
+		<div class="script_list_footer">
+			<div class="script_send_button" id="button1">제출하기</div>
+			<div class="script_send_button_end" id="button2">제출완료</div><br>
+			<div class="script_send_button_tag" id="button3">완료된 글보기 (이 페이지는 삭제) <i class="fa fa-angle-right"></i></div>
+		</div>
+	</div>
+</section>
